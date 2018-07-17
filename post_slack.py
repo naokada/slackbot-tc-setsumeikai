@@ -45,5 +45,4 @@ def post_text(channel, text):
     }
     requests.post(url_slack_api, data=slack_api_params)
 
-if __NAME__ == '__main__':
-    post_slack()
+post_slack()
