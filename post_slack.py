@@ -28,7 +28,7 @@ Webサイト制作の体験会のアカウント: ID：html@tech-camp.in (pass:�
 https://master.tech-camp.in/curriculums/2981
 https://master.tech-camp.in/curriculums/2982
         ```"""
-    post_text('sales_team', text)
+    post_text('sales_leaders', text)
 
 
 post_slack()

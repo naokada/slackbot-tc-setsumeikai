@@ -12,8 +12,8 @@ sys.setdefaultencoding("utf-8")
 
 def get_events():
     # 認証
-    json_key = json.load(open('credentials.json'))
     scope = ['https://spreadsheets.google.com/feeds']
+    json_key = json.load(open('credentials.json'))
     credentials = oauth2client.client.SignedJwtAssertionCredentials(json_key['client_email'], json_key['private_key'].encode(), scope)
     gc = gspread.authorize(credentials)
 
@@ -64,7 +64,6 @@ https://master.tech-camp.in/curriculums/2981
 https://master.tech-camp.in/curriculums/2982
         ```"""%(div_slack_id, date, time, slack_id)
     post_text('test-naokada', text)
-    #print(text)
 
 
 post_calender()
